@@ -4,10 +4,12 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname:"scontent-iad3-2.cdninstagram.com"
+          hostname: 'scontent-iad3-2.cdninstagram.com',
         },
       ],
     },
-  }
+    output: 'standalone', // For optimal Vercel deployments
+  };
   
-  export default nextConfig
+  export default nextConfig;
+  
