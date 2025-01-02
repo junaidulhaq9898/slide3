@@ -1,19 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    output: 'standalone',
-    experimental: {
-      images: {
-        remotePatterns: [
-          {
-            protocol: 'https',
-            hostname: 'example.com',
-            pathname: '/**',
-          },
-        ],
-      },
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname:"scontent-iad3-2.cdninstagram.com"
+        },
+      ],
     },
-    basePath: '', // Adjust if needed
-  };
+  }
   
-  export default nextConfig;  
+  export default nextConfig
